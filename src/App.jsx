@@ -302,7 +302,7 @@ export default function App() {
 
     try {
       const res = await fetch(
-        `http://127.0.0.1:8000/predict?location=${location}&sqft=${sqft}&bath=${bath}&bhk=${bhk}`
+        `https://viniyogai-backend.onrender.com/predict?location=${location}&sqft=${sqft}&bath=${bath}&bhk=${bhk}`
       );
 
       const data = await res.json();
